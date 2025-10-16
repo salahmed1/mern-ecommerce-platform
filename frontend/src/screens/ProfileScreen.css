@@ -1,0 +1,66 @@
+.profile-screen {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* On larger screens, use a two-column layout */
+@media (min-width: 960px) {
+    .profile-screen {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.profile-info {
+    background-color: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 10px;
+    height: fit-content;
+    border: 1px solid var(--header-border);
+}
+
+.profile-info h2 {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--header-border);
+}
+
+.profile-info p {
+    margin-top: 1rem;
+}
+
+.profile-orders h2 {
+    margin-bottom: 1.5rem;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+    border: 1px solid var(--header-border);
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.orders-table th {
+    background-color: var(--card-background);
+}
+
+/* Style for the 'Details' button in the table */
+.details-btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--card-background);
+    border: 1px solid var(--header-border);
+    color: var(--text-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.details-btn:hover {
+    background-color: var(--background-color);
+    border-color: var(--accent-color);
+}
